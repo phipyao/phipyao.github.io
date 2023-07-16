@@ -1,9 +1,20 @@
+const canvas = document.querySelector("canvas")
+const img = new Image()
+let keyframes = 0;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+console.log(canvas.width)
 
+images = Math.floor(canvas.width/900) + 2
+console.log(images)
 
-function drawBackground(ref, ctx, keyframes, speed, frame){
+const ctx = canvas.getContext("2d")
+
+function drawBackground(ref, ctx, keyframes, speed, frame){   
     if(ref){
-      ctx.drawImage(ref, 0, 600*frame, 900, 600, -(speed*keyframes%900) + 899, 0, 900, 600)
-      ctx.drawImage(ref, 0, 600*frame, 900, 600, -(speed*keyframes%900), 0, 900, 600)
+        for(let i = 0; i < images; i++){
+            ctx.drawImage(ref, 0, 600*frame, 900, 600, -(speed*keyframes%900) + (i*899), 0, 900, 600)
+        }        
     }
 }
 
@@ -15,16 +26,12 @@ function getBackground(ref, context, keyframes){
     drawBackground(ref, context, keyframes, 1.2, 4, 0)//front water
 }
 
-const canvas = document.querySelector("canvas")
-const img = new Image()
-let keyframes = 0;
-canvas.width = 900;
-canvas.height = 600;
-
-const ctx = canvas.getContext("2d")
-
 function init(){
     img.src = "background.png"
+    if(canvas.height > 600){
+        ctx.fillStyle = "rgb(113, 138, 199)"
+        ctx.fillRect(0, 600, canvas.width, canvas.height)
+    }
     window.requestAnimationFrame(draw)
 }
 
