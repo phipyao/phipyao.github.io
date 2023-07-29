@@ -2,11 +2,9 @@ const canvas = document.querySelector("canvas")
 const img = new Image()
 let keyframes = 0;
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-console.log(canvas.width)
+canvas.height = 600;
 
 images = Math.floor(canvas.width/900) + 2
-console.log(images)
 
 const ctx = canvas.getContext("2d")
 
@@ -28,10 +26,10 @@ function getBackground(ref, context, keyframes){
 
 function init(){
     img.src = "background.png"
-    if(canvas.height > 600){
-        ctx.fillStyle = "rgb(113, 138, 199)"
-        ctx.fillRect(0, 600, canvas.width, canvas.height)
-    }
+    // if(canvas.height > 600){
+    //     ctx.fillStyle = "rgb(113, 138, 199)"
+    //     ctx.fillRect(0, 600, canvas.width, canvas.height)
+    // }
     window.requestAnimationFrame(draw)
 }
 
