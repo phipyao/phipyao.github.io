@@ -24,18 +24,25 @@ function getBackground(ref, context, keyframes){
     drawBackground(ref, context, keyframes, 1.2, 4, 0)//front water
 }
 
+//Handles Dynamic Background Resizes
+window.addEventListener('resize', resizeCanvas, false);
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    images = Math.floor(canvas.width/900) + 2
+}
+
 function init(){
     img.src = "background.png"
-    // if(canvas.height > 600){
-    //     ctx.fillStyle = "rgb(113, 138, 199)"
-    //     ctx.fillRect(0, 600, canvas.width, canvas.height)
-    // }
     window.requestAnimationFrame(draw)
 }
+
+
+
 
 function draw(){
     getBackground(img, ctx, keyframes)
     keyframes++
+    
     window.requestAnimationFrame(draw)
 }
 
