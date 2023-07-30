@@ -1,8 +1,17 @@
-canvas {
-    padding: 0;
-}
-
 body {
     margin: 0;
     background-color: rgb(113, 138, 199);
+}
+
+canvas {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.title-div {
+    position: absolute;
+    top: 292px;
+    left: 50%;
+    transform: translateX(-50%);
 }

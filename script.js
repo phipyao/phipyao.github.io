@@ -36,9 +36,6 @@ function init(){
     window.requestAnimationFrame(draw)
 }
 
-
-
-
 function draw(){
     getBackground(img, ctx, keyframes)
     keyframes++
