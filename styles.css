@@ -1,17 +1,28 @@
 body {
     margin: 0;
-    background-color: rgb(113, 138, 199);
+    /* background-color: #718ac7; */
+    background-color: #5e64a6;
 }
 
 canvas {
-    padding: 0;
     display: flex;
     justify-content: flex-end; 
 }
 
 .title-div {
     position: absolute;
-    top: 292px;
+    top: 290px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.div-blue {
+    background-color: #718ac7;
+}
+
+
+p {
+    margin-left: 20%; 
+    margin-right: 20%; 
+    text-indent: 25px;
 }
