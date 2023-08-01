@@ -13,54 +13,57 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     
-    <!-- Custom CSS -->
+    <!-- Custom Stuff -->
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scroll.js"></script>
+    
 </head>
 
 <body>    
 
     <!-- Epic Parallax Canvas Pixel Art -->
-    <div>
+    <section class="div-darkblue">
         <canvas></canvas>
         <script src="scriptcanvas.js"></script>
-    </div>
+    </section>
     
     <!-- Title -->
-    <div class="title-div">
-        <div class="d-flex justify-content-center align-items-center flex-column h-100 text-light">
-            <div>
-                <h1 class="mb-3">Philip Yao</h1>                
-            </div>     
-            <div>
-                <h4 class="mb-3 text">Developer.</h4> 
-                <script src="scriptscramble.js"></script>              
-            </div>     
-        </div>
+    <div class="title-div text-light">
+        <h1 class="mb-3">Philip Yao</h1>                 
+    </div>
+    <div class="subtitle-div text-light">
+        <h4 class="mb-3 text">Developer.</h4>
+        <script src="scriptscramble.js"></script>
     </div>
 
     <!-- Content -->
-    <div class="div-blue" style="height: 5px;"></div>
-    <div class="div-back">
-        <div class="div-blue d-flex justify-content-center align-items-center flex-column h-100 text-light px-5 py-4 mx-auto inset" >
-            <div>
-                <h2 class="mb-3 glow">About Me</h2>
-            </div>
-            <div class="h5">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <p class = "h6">
-                im stil riting ;-;
-            </p>
-        </div>
-        
-    </div>
     
-    <div class="div-blue" style="height: 200px;"></div>
+    <section class="small-section">
+        <div class="div-back">
+            <div class="div-blue d-flex justify-content-center align-items-center flex-column h-100 text-light px-5 py-4 mx-auto" >
+                <div class="hidden">
+                    <h2 class="mb-3">About Me</h2>
+                </div>
+                <div class="h5 hidden hidden-slow">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="h5 hidden hidden-slow">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <p class = "h6 hidden hidden-slow">
+                    im stil riting ;-;
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="tiny-section"></section>
+    
 
 </body>
 </html>
