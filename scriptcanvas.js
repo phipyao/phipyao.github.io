@@ -30,22 +30,11 @@ window.addEventListener('resize', resizeCanvas, false)
 function resizeCanvas() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
-    ctx.fillStyle = 'rgb(94, 100, 166)'
-    ctx.fillRect(0, 0, canvas.width, 17)
-    // ctx.fillStyle = 'rgb(113, 138, 199)'
-    // ctx.fillRect(0, 617, canvas.width, canvas.height)
-    
-    images = Math.floor(canvas.width/900) + 2
-
-    
+    images = Math.floor(canvas.width/900) + 2   
 }
 
 function init(){
     img.src = "background.png"
-    ctx.fillStyle = 'rgb(94, 100, 166)'
-    ctx.fillRect(0, 0, canvas.width, 17)
-    // ctx.fillStyle = 'rgb(113, 138, 199)'
-    // ctx.fillRect(0, 617, canvas.width, canvas.height-617)
     window.requestAnimationFrame(draw)
 }
 

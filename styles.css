@@ -12,7 +12,7 @@ body {
 }
 
 canvas {
-    background-color: #718ac7;
+    position: absolute;
     display: flex;
     justify-content: flex-end; 
 }
@@ -57,6 +57,16 @@ section {
 
 .div-darkblue {
     background-color: #5e64a6;
+}
+
+.div-bluemix {
+    background: linear-gradient(
+        to top,
+        #718ac7 0%,
+        #718ac7 50%,
+        #5e64a6 50%,
+        #5e64a6 100%
+      );
 }
 
 .div-back {
