@@ -60,8 +60,6 @@ class TextScramble {
     'I write code.',
     'Designer.',
     'I make stuff.',
-    'Innovator.',
-    'I have some ideas.',
     'unemployed.',
     'i need a job',
   ]
@@ -72,7 +70,7 @@ class TextScramble {
   let counter = 0
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 2000)
+      setTimeout(next, 1800)
     })
     counter = (counter + 1) % phrases.length
   }
