@@ -1,12 +1,22 @@
 body {
     margin: 0;
+
+    /* Dark Blue: */
     /* background-color: #718ac7; */
+    /* 92, 87, 153 */
+    
+    /* Light Blue: */
     background-color: #5e64a6;
+    /* 131, 180, 230 */
 }
 
 canvas {
     display: flex;
     justify-content: flex-end; 
+}
+
+p {
+    text-indent: 25px;
 }
 
 .title-div {
@@ -21,8 +31,25 @@ canvas {
 }
 
 
-p {
-    margin-left: 20%; 
-    margin-right: 20%; 
-    text-indent: 25px;
+
+.div-darkblue {
+    background-color: #5e64a6;
+}
+
+.div-back {
+    background-color: #718ac7;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.glow {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4)
+}
+
+.inset {
+    width: 800px;
+    background: #5e64a6;
+    /* border-radius: 12px; */
+    box-shadow: inset 0 4px 30px rgba(14, 37, 90, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
