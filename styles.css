@@ -18,6 +18,7 @@ canvas {
 }
 
 p {
+    width: 600px;
     text-indent: 25px;
 }
 
@@ -37,18 +38,39 @@ section {
     min-height: 30vh;
 }
 
+.title {
+    font-size: 40px;
+}
+
 .title-div {
     position: absolute;
     top: 290px;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
+    height: 56px;
+}
+
+.title-popup {
+    opacity: 0;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    filter: blur(5px);
+    transform: translateY(56px);
+    transition: all 1s;
 }
 
 .subtitle-div {
     position: absolute;
-    top: 350px;
+    top: 354px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.fadein{
+    opacity: 0;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    filter: blur(5px);
+    transition: all 1.2s;
 }
 
 .div-blue {
@@ -63,8 +85,8 @@ section {
     background: linear-gradient(
         to top,
         #718ac7 0%,
-        #718ac7 50%,
-        #5e64a6 50%,
+        #718ac7 90%,
+        #5e64a6 90%,
         #5e64a6 100%
       );
 }
@@ -91,11 +113,19 @@ section {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+    transition: all 1s;
 }
 
-.hidden-slow{
-    transition: all 1.8s;
+.hidden-slow-1{
+    transition: all 1.1s;
+}
+
+.hidden-slow-2{
+    transition: all 1.25s;
+}
+
+.hidden-slow-3{
+    transition: all 1.45s;
 }
 
 .show {
