@@ -15,11 +15,14 @@ canvas {
     position: absolute;
     display: flex;
     justify-content: flex-end; 
+    width: 100%;
 }
 
 p {
-    width: 100%;
-    max-width: 600px;
+    /* width: 100%;
+    max-width: 600px; */
+    width: 600px;
+    max-width: 90vw;
     text-indent: 25px;
 }
 
@@ -28,6 +31,7 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
+
     min-height: 100vh;
 }
 
@@ -82,14 +86,14 @@ section {
     background-color: #5e64a6;
 }
 
-.div-bluemix {
+.front-page {
     background: linear-gradient(
         to top,
         #718ac7 0%,
         #718ac7 90%,
         #5e64a6 90%,
         #5e64a6 100%
-      );
+    );
 }
 
 .div-back {
@@ -102,18 +106,20 @@ section {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
-/* .inset {
-    width: 800px;
+.inset {
+    width: 700px;
+    max-width: 100vw;
     background: #5e64a6;
     box-shadow: inset 0 4px 30px rgba(14, 37, 90, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.3);
-} */
+    overflow: hidden;
+}
 
 .hidden{
     opacity: 0;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateY(100%);
     transition: all 1s;
 }
 
@@ -126,7 +132,7 @@ section {
 }
 
 .hidden-slow-3{
-    transition: all 1.45s;
+    transition: all 1.5s;
 }
 
 .show {
