@@ -87,6 +87,7 @@ section {
 }
 
 .front-page {
+    height: 600px;
     background: linear-gradient(
         to top,
         #718ac7 0%,

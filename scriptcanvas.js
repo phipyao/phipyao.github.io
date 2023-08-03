@@ -1,8 +1,8 @@
-const canvas = document.querySelector("canvas")
+const canvas = document.querySelector(".background-art")
 const img = new Image()
 let keyframes = 0
 canvas.width = window.innerWidth
-canvas.height = window.innerHeight
+canvas.height = 600
 
 images = Math.floor(canvas.width/900) + 2
 
@@ -29,7 +29,7 @@ function getBackground(ref, context, keyframes){
 window.addEventListener('resize', resizeCanvas, false)
 function resizeCanvas() {
     canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+    // canvas.height = window.innerHeight
     images = Math.floor(canvas.width/900) + 2   
 }
 
