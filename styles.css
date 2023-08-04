@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-
     /* Dark Blue: */
     /* background-color: #718ac7; */
     /* 92, 87, 153 */
@@ -9,6 +7,8 @@ body {
     /* Light Blue: */
     background-color: #5e64a6;
     /* 131, 180, 230 */
+
+    /* 5e64a6-718ac7-f8f4e3-d4cdc3-a2a392 */
 }
 
 canvas {
@@ -33,6 +33,10 @@ section {
     align-content: center;
 
     min-height: 100vh;
+}
+
+.text-white{
+    color:#F8F4E3;
 }
 
 .small-section{
