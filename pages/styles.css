@@ -26,6 +26,14 @@ p {
     text-indent: 25px;
 }
 
+a {
+    color: wheat;
+}
+
+a:hover {
+    color: #718ac7;
+}
+
 section {
     background-color: #718ac7;
     display: grid;
@@ -138,6 +146,14 @@ section {
 
 .hidden-slow-3{
     transition: all 1.5s;
+}
+
+.hidden-slow-4{
+    transition-delay: 1s;
+}
+
+.hidden-slow-5{
+    transition-delay: 2.3s;
 }
 
 .show {
