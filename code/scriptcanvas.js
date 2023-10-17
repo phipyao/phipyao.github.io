@@ -34,7 +34,7 @@ function resizeCanvas() {
 }
 
 function init(){
-    img.src = "background.png"
+    img.src = "assets/background.png"
     window.requestAnimationFrame(draw)
 }
 
