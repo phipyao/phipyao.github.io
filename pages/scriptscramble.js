@@ -60,8 +60,6 @@ class TextScramble {
     'I write code.',
     'Designer.',
     'I make stuff.',
-    'Student.',
-    'I learn sometimes.',
   ]
   
   const el = document.querySelector('.text')
